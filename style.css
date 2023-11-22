@@ -1,0 +1,104 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+.container{
+    background-image: url(./background.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    min-height: 100vh;
+    backdrop-filter: blur(5px);
+}
+.container h1{
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+    padding: 20px;
+    font-size: 45px;
+}
+form{
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    height: 70px;
+    margin: auto;
+    background: transparent;
+    gap: 20px;
+}
+form input{
+    flex:1;
+    border: 1px solid white;
+    outline: 0;
+    height: 80%;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 30px;
+    color:white;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 10px;
+}
+form button{
+    width: 25%;
+    border: 2px solid white;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.347);
+    height: 80%;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+}
+#show-more{
+    display: none;
+    width: 440px;
+    height: 60px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 500px;
+    /* margin-top: 2px; */
+    cursor: pointer;
+    padding: 20px;
+}
+::placeholder{
+    color: white;
+}
+#search-result{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    margin: 40px;
+    padding: 20px;
+    margin-left: 100px;
+    gap: 30PX;
+
+}
+#search-result img{
+    width: 230px;
+    height: 230px;
+}
+
+.text{
+    font-size: 28px;
+    text-align: center;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    padding-bottom:70px;
+}
